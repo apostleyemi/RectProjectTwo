@@ -11,6 +11,12 @@ import ClickClass from './components/ClickClass';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import InlineStyle from './components/InlineStyle';
+import './appStyle.css';
+import styles from './appStyle.module.css'
+import Form from './components/Form';
 
 
 class App extends Component{
@@ -19,10 +25,19 @@ class App extends Component{
   render()
   {
     return( 
+      
     <div className="APP">
 
+    <Form/>
+
+    {/*   <h1 className='error'>Error occured somewhere</h1>
+      <h1 className={styles.success}>Great Success Always</h1>
+
+      <InlineStyle/>
+      <Stylesheet primary={true}/>
+      <NameList/>
       <UserGreeting/>
-      <ParentComponent/>
+      <ParentComponent/> */}
     {/*   <FunctionClick/>  
       <ClickClass/>
       <EventBind/>
