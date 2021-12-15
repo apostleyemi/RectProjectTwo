@@ -17,6 +17,12 @@ import InlineStyle from './components/InlineStyle';
 import './appStyle.css';
 import styles from './appStyle.module.css'
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 
 class App extends Component{
@@ -28,7 +34,17 @@ class App extends Component{
       
     <div className="APP">
 
-    <Form/>
+  <RefsDemo/>
+
+{/* <ParentComp/> */}
+{/* <PureComp/> */}
+
+      {/* <FragmentDemo/>
+      <Table/> */}
+
+      {/* <LifecycleA/> */}
+
+    {/* <Form/> */}
 
     {/*   <h1 className='error'>Error occured somewhere</h1>
       <h1 className={styles.success}>Great Success Always</h1>
