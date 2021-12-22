@@ -23,6 +23,19 @@ import Table from './components/Table';
 import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import ShareCounter from './components/ShareCounter';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 class App extends Component{
@@ -30,11 +43,45 @@ class App extends Component{
 
   render()
   {
-    return( 
-      
-    <div className="APP">
+    return(         
+      <div className="APP"> 
+      <UserProvider value="Techspace Solution">
+      <ComponentC />
+      </UserProvider>
+ 
+   
+   {/* <ShareCounter render={ (count, incrementCount) => (<ClickCounterTwo count={count} incrementCount={incrementCount}/>)}/>
 
-  <RefsDemo/>
+   <ShareCounter render={ (count, incrementCount) => (<HoverCounterTwo count={count} incrementCount={incrementCount}/>)}/> */}
+   {/* <User render={(isLoggedIn)=>isLoggedIn ? 'Techspace Solution by Dayo' : 'Visitor'}/> */}
+    {/* <ClickCounterTwo/>
+    <HoverCounterTwo/> */}
+    
+    
+     {/* <ClickCounter name='Techsace Solutions'/> */}
+
+    {/* <HoverCounter/> */}
+     
+       {/* <ClickCounter name='Techsace Solutions'/>
+
+       <HoverCounter/> */}
+  {/* <ErrorBoundary>
+      <Hero heroName="Peter"/>
+   </ErrorBoundary>
+  <ErrorBoundary>    
+      <Hero heroName="John"/> */}
+  {/* </ErrorBoundary> */}
+  {/* <ErrorBoundary> */}
+      {/* <Hero heroName="Judas"/> */}
+  {/* </ErrorBoundary> */}
+
+      {/* <PortalDemo/> */}
+
+      {/* <FRParentInput/> */}
+       
+      {/* <FocusInput/> */}
+
+  {/* <RefsDemo/> */}
 
 {/* <ParentComp/> */}
 {/* <PureComp/> */}
